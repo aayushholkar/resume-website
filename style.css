@@ -17,7 +17,7 @@
     padding: 2rem;
   }
   
-  /* NAV BAR */
+  /* Navigation Bar */
   nav {
     position: sticky;
     top: 0;
@@ -37,6 +37,7 @@
     flex-wrap: wrap;
   }
   
+  /* Your Name Styling */
   .nav-name {
     font-size: 2rem;
     font-weight: bold;
@@ -45,6 +46,7 @@
     color: transparent;
   }
   
+  /* Nav Links */
   .nav-links {
     display: flex;
     list-style: none;
@@ -55,7 +57,7 @@
   .nav-links a {
     text-decoration: none;
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-weight: 500;
@@ -63,7 +65,7 @@
   }
   
   .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.3);
     color: #f72585;
   }
   
@@ -78,7 +80,7 @@
     margin-top: 0.5rem;
   }
   
-  /* Section Headings */
+  /* Section Heading */
   .section-heading {
     max-width: 800px;
     margin: 4rem auto 1rem auto;
@@ -89,7 +91,7 @@
     padding-left: 0.8rem;
   }
   
-  /* Cards */
+  /* Glass Cards for Resume */
   .card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
@@ -129,7 +131,7 @@
     margin-top: 4rem;
   }
   
-  /* Mobile Responsive */
+  /* Mobile Responsiveness */
   @media (max-width: 768px) {
     body {
       padding: 1rem;
@@ -159,7 +161,8 @@
       text-align: center;
     }
   
-    .section-heading, .card {
+    .section-heading,
+    .card {
       padding: 1.5rem;
       margin: 1.5rem auto;
       width: 90%;
@@ -169,7 +172,8 @@
       font-size: 1.1rem;
     }
   
-    .card p, ul li {
+    .card p,
+    ul li {
       font-size: 0.95rem;
     }
   }
