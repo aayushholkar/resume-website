@@ -1,0 +1,124 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #ff0080);
+    color: #fff;
+    line-height: 1.6;
+    padding: 2rem;
+  }
+  
+  /* NAV BAR - dark translucent */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(15, 12, 41, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-name {
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, #6a11cb, #f72585);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f72585;
+  }
+  
+  /* Contact */
+  header {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  header p {
+    color: #ccc;
+    margin-top: 0.5rem;
+  }
+  
+  /* Section Headings OUTSIDE the cards */
+  .section-heading {
+    max-width: 800px;
+    margin: 4rem auto 1rem auto;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-left: 4px solid;
+    border-image: linear-gradient(90deg, #6a11cb, #f72585) 1;
+    padding-left: 0.8rem;
+  }
+  
+  /* Glassmorphic Cards */
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 1rem auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    color: #f0f0f0;
+  }
+  
+  .card h3 {
+    color: #f72585;
+    margin-top: 1rem;
+  }
+  
+  .card p {
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  /* Lists */
+  ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-top: 4rem;
+  }
