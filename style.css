@@ -17,7 +17,7 @@
     padding: 2rem;
   }
   
-  /* ✅ Sticky navigation bar for desktop */
+  /* ✅ Sticky navigation bar for desktop only */
   nav {
     position: sticky;
     top: 0;
@@ -28,7 +28,7 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   }
   
-  /* ✅ Flex layout for nav */
+  /* ✅ Layout for nav container */
   .nav-container {
     max-width: 1000px;
     margin: auto;
@@ -38,7 +38,7 @@
     flex-wrap: wrap;
   }
   
-  /* ✅ Your name styling with gradient text */
+  /* ✅ Your name with gradient text */
   .nav-name {
     font-size: 2rem;
     font-weight: bold;
@@ -47,7 +47,7 @@
     color: transparent;
   }
   
-  /* ✅ Nav link buttons */
+  /* ✅ Nav links with gradient border */
   .nav-links {
     display: flex;
     list-style: none;
@@ -58,19 +58,24 @@
   .nav-links a {
     text-decoration: none;
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.15);
     padding: 0.5rem 1rem;
+    border: 1px solid transparent;
     border-radius: 8px;
     font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15)),
+                      linear-gradient(90deg, #f72585, #6a11cb);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
   }
   
   .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+                      linear-gradient(90deg, #f72585, #6a11cb);
     color: #f72585;
   }
   
-  /* ✅ Header text below nav */
+  /* ✅ Header section */
   header {
     text-align: center;
     margin: 2rem 0;
@@ -81,7 +86,7 @@
     margin-top: 0.5rem;
   }
   
-  /* ✅ Section titles with gradient left border */
+  /* ✅ Section headings */
   .section-heading {
     max-width: 800px;
     margin: 4rem auto 1rem auto;
@@ -92,7 +97,7 @@
     padding-left: 0.8rem;
   }
   
-  /* ✅ Card design using glassmorphism */
+  /* ✅ Resume cards using glassmorphism */
   .card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
@@ -114,7 +119,7 @@
     color: #ccc;
   }
   
-  /* ✅ List items inside cards */
+  /* ✅ List formatting */
   ul {
     padding-left: 1.5rem;
     margin-top: 0.5rem;
@@ -132,9 +137,9 @@
     margin-top: 4rem;
   }
   
-  /* ✅ MOBILE FRIENDLY STYLING */
+  /* ✅ MOBILE RESPONSIVE FIXES */
   @media (max-width: 768px) {
-    /* Remove sticky nav on phones for space */
+    /* Remove sticky nav on mobile */
     nav {
       position: relative;
       box-shadow: none;
