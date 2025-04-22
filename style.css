@@ -1,4 +1,4 @@
-/* ✅ Reset basic layout and paddings */
+/* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
     padding: 2rem;
   }
   
-  /* ✅ Desktop sticky navigation bar */
+  /* Navigation Bar */
   nav {
     position: sticky;
     top: 0;
@@ -28,7 +28,6 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   }
   
-  /* ✅ Nav content layout */
   .nav-container {
     max-width: 1000px;
     margin: auto;
@@ -38,7 +37,6 @@
     flex-wrap: wrap;
   }
   
-  /* ✅ Your name with gradient and big font */
   .nav-name {
     font-size: 2rem;
     font-weight: bold;
@@ -47,7 +45,6 @@
     color: transparent;
   }
   
-  /* ✅ Nav links layout */
   .nav-links {
     display: flex;
     list-style: none;
@@ -55,7 +52,6 @@
     flex-wrap: wrap;
   }
   
-  /* ✅ Gradient border nav buttons */
   .nav-links a {
     text-decoration: none;
     color: #fff;
@@ -78,7 +74,6 @@
     color: #f72585;
   }
   
-  /* ✅ Header info */
   header {
     text-align: center;
     margin: 2rem 0;
@@ -89,7 +84,43 @@
     margin-top: 0.5rem;
   }
   
-  /* ✅ Section titles */
+  /* Intro Section */
+  .intro-section {
+    max-width: 800px;
+    margin: 2.5rem auto;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  }
+  
+  .intro-section p {
+    font-size: 1.15rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+  }
+  
+  .connect-btn {
+    display: inline-block;
+    background-image: linear-gradient(to right, #f72585, #6a11cb);
+    color: #fff;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+  }
+  
+  .connect-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  
+  /* Section Titles */
   .section-heading {
     max-width: 800px;
     margin: 4rem auto 1rem auto;
@@ -100,7 +131,7 @@
     padding-left: 0.8rem;
   }
   
-  /* ✅ Glassmorphism resume cards */
+  /* Cards */
   .card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
@@ -122,7 +153,6 @@
     color: #ccc;
   }
   
-  /* ✅ List items in cards */
   ul {
     padding-left: 1.5rem;
     margin-top: 0.5rem;
@@ -132,7 +162,7 @@
     margin-bottom: 0.5rem;
   }
   
-  /* ✅ Footer */
+  /* Footer */
   footer {
     text-align: center;
     font-size: 0.85rem;
@@ -140,7 +170,7 @@
     margin-top: 4rem;
   }
   
-  /* ✅ MOBILE FIXES */
+  /* Mobile Adjustments */
   @media (max-width: 768px) {
     nav {
       position: relative;
@@ -176,7 +206,8 @@
     }
   
     .section-heading,
-    .card {
+    .card,
+    .intro-section {
       padding: 1.5rem;
       margin: 1.5rem auto;
       width: 90%;
@@ -187,7 +218,8 @@
     }
   
     .card p,
-    ul li {
-      font-size: 0.95rem;
+    ul li,
+    .intro-section p {
+      font-size: 1rem;
     }
   }
