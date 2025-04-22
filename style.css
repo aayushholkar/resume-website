@@ -1,4 +1,4 @@
-/* ✅ Reset default margins and paddings */
+/* ✅ Reset basic layout and paddings */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
     padding: 2rem;
   }
   
-  /* ✅ Sticky navigation bar for desktop only */
+  /* ✅ Desktop sticky navigation bar */
   nav {
     position: sticky;
     top: 0;
@@ -28,7 +28,7 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   }
   
-  /* ✅ Layout for nav container */
+  /* ✅ Nav content layout */
   .nav-container {
     max-width: 1000px;
     margin: auto;
@@ -38,7 +38,7 @@
     flex-wrap: wrap;
   }
   
-  /* ✅ Your name with gradient text */
+  /* ✅ Your name with gradient and big font */
   .nav-name {
     font-size: 2rem;
     font-weight: bold;
@@ -47,7 +47,7 @@
     color: transparent;
   }
   
-  /* ✅ Nav links with gradient border */
+  /* ✅ Nav links layout */
   .nav-links {
     display: flex;
     list-style: none;
@@ -55,6 +55,7 @@
     flex-wrap: wrap;
   }
   
+  /* ✅ Gradient border nav buttons */
   .nav-links a {
     text-decoration: none;
     color: #fff;
@@ -63,19 +64,21 @@
     border-radius: 8px;
     font-weight: 500;
     transition: all 0.3s ease;
-    background-image: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15)),
-                      linear-gradient(90deg, #f72585, #6a11cb);
+    background-image: 
+      linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15)),
+      linear-gradient(90deg, #f72585, #6a11cb);
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
   
   .nav-links a:hover {
-    background-image: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
-                      linear-gradient(90deg, #f72585, #6a11cb);
+    background-image: 
+      linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+      linear-gradient(90deg, #f72585, #6a11cb);
     color: #f72585;
   }
   
-  /* ✅ Header section */
+  /* ✅ Header info */
   header {
     text-align: center;
     margin: 2rem 0;
@@ -86,7 +89,7 @@
     margin-top: 0.5rem;
   }
   
-  /* ✅ Section headings */
+  /* ✅ Section titles */
   .section-heading {
     max-width: 800px;
     margin: 4rem auto 1rem auto;
@@ -97,7 +100,7 @@
     padding-left: 0.8rem;
   }
   
-  /* ✅ Resume cards using glassmorphism */
+  /* ✅ Glassmorphism resume cards */
   .card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
@@ -119,7 +122,7 @@
     color: #ccc;
   }
   
-  /* ✅ List formatting */
+  /* ✅ List items in cards */
   ul {
     padding-left: 1.5rem;
     margin-top: 0.5rem;
@@ -137,9 +140,8 @@
     margin-top: 4rem;
   }
   
-  /* ✅ MOBILE RESPONSIVE FIXES */
+  /* ✅ MOBILE FIXES */
   @media (max-width: 768px) {
-    /* Remove sticky nav on mobile */
     nav {
       position: relative;
       box-shadow: none;
