@@ -16,7 +16,7 @@
     padding: 2rem;
   }
   
-  /* NAVIGATION BAR */
+  /* NAVIGATION BAR (Sticky on desktop) */
   nav {
     position: sticky;
     top: 0;
@@ -202,10 +202,10 @@
   
   /* MOBILE STYLES */
   @media (max-width: 768px) {
-
     nav {
-        position: static;
-      }
+      position: static; /* 🔥 This disables sticky nav on mobile */
+    }
+  
     .nav-container {
       flex-direction: column;
       align-items: center;
