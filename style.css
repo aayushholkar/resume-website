@@ -1,4 +1,4 @@
-/* ✅ Reset base styling for consistent layout */
+/* Base Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@
     scroll-behavior: smooth;
   }
   
-  /* ✅ Body gradient and layout */
   body {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, #0f0c29, #302b63, #ff0080);
@@ -18,7 +17,7 @@
     padding: 2rem;
   }
   
-  /* ✅ Navigation bar: sticky top + blur + gradient shadow */
+  /* NAV BAR */
   nav {
     position: sticky;
     top: 0;
@@ -29,7 +28,6 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   }
   
-  /* ✅ Layout of nav: name on left, links on right (or stacked on mobile) */
   .nav-container {
     max-width: 1000px;
     margin: auto;
@@ -39,16 +37,14 @@
     flex-wrap: wrap;
   }
   
-  /* ✅ Name styling with gradient text + large size */
   .nav-name {
-    font-size: 2rem; /* Larger font */
+    font-size: 2rem;
     font-weight: bold;
     background: linear-gradient(90deg, #f72585, #6a11cb);
     -webkit-background-clip: text;
     color: transparent;
   }
   
-  /* ✅ Nav links laid out horizontally (or vertical on mobile) */
   .nav-links {
     display: flex;
     list-style: none;
@@ -56,7 +52,6 @@
     flex-wrap: wrap;
   }
   
-  /* ✅ Each nav link styled as a soft button */
   .nav-links a {
     text-decoration: none;
     color: #fff;
@@ -67,13 +62,12 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  /* ✅ Hover effect for nav buttons */
   .nav-links a:hover {
     background-color: rgba(255, 255, 255, 0.25);
     color: #f72585;
   }
   
-  /* ✅ Contact text below navbar */
+  /* Header Contact Info */
   header {
     text-align: center;
     margin: 2rem 0;
@@ -84,7 +78,7 @@
     margin-top: 0.5rem;
   }
   
-  /* ✅ Section heading gradient marker */
+  /* Section Headings */
   .section-heading {
     max-width: 800px;
     margin: 4rem auto 1rem auto;
@@ -95,7 +89,7 @@
     padding-left: 0.8rem;
   }
   
-  /* ✅ Resume content cards */
+  /* Cards */
   .card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
@@ -107,19 +101,17 @@
     color: #f0f0f0;
   }
   
-  /* ✅ Job titles */
   .card h3 {
     color: #f72585;
     margin-top: 1rem;
   }
   
-  /* ✅ Dates/location under each job */
   .card p {
     font-style: italic;
     color: #ccc;
   }
   
-  /* ✅ Lists for roles and achievements */
+  /* Lists */
   ul {
     padding-left: 1.5rem;
     margin-top: 0.5rem;
@@ -129,7 +121,7 @@
     margin-bottom: 0.5rem;
   }
   
-  /* ✅ Footer */
+  /* Footer */
   footer {
     text-align: center;
     font-size: 0.85rem;
@@ -137,7 +129,7 @@
     margin-top: 4rem;
   }
   
-  /* ✅ MOBILE STYLING */
+  /* Mobile Responsive */
   @media (max-width: 768px) {
     body {
       padding: 1rem;
