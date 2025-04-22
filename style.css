@@ -1,4 +1,4 @@
-/* Base Reset */
+/* ✅ Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
     padding: 2rem;
   }
   
-  /* Navigation Bar */
+  /* ✅ Sticky navigation bar for desktop */
   nav {
     position: sticky;
     top: 0;
@@ -28,6 +28,7 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   }
   
+  /* ✅ Flex layout for nav */
   .nav-container {
     max-width: 1000px;
     margin: auto;
@@ -37,7 +38,7 @@
     flex-wrap: wrap;
   }
   
-  /* Your Name Styling */
+  /* ✅ Your name styling with gradient text */
   .nav-name {
     font-size: 2rem;
     font-weight: bold;
@@ -46,7 +47,7 @@
     color: transparent;
   }
   
-  /* Nav Links */
+  /* ✅ Nav link buttons */
   .nav-links {
     display: flex;
     list-style: none;
@@ -69,7 +70,7 @@
     color: #f72585;
   }
   
-  /* Header Contact Info */
+  /* ✅ Header text below nav */
   header {
     text-align: center;
     margin: 2rem 0;
@@ -80,7 +81,7 @@
     margin-top: 0.5rem;
   }
   
-  /* Section Heading */
+  /* ✅ Section titles with gradient left border */
   .section-heading {
     max-width: 800px;
     margin: 4rem auto 1rem auto;
@@ -91,7 +92,7 @@
     padding-left: 0.8rem;
   }
   
-  /* Glass Cards for Resume */
+  /* ✅ Card design using glassmorphism */
   .card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
@@ -113,7 +114,7 @@
     color: #ccc;
   }
   
-  /* Lists */
+  /* ✅ List items inside cards */
   ul {
     padding-left: 1.5rem;
     margin-top: 0.5rem;
@@ -123,7 +124,7 @@
     margin-bottom: 0.5rem;
   }
   
-  /* Footer */
+  /* ✅ Footer */
   footer {
     text-align: center;
     font-size: 0.85rem;
@@ -131,8 +132,14 @@
     margin-top: 4rem;
   }
   
-  /* Mobile Responsiveness */
+  /* ✅ MOBILE FRIENDLY STYLING */
   @media (max-width: 768px) {
+    /* Remove sticky nav on phones for space */
+    nav {
+      position: relative;
+      box-shadow: none;
+    }
+  
     body {
       padding: 1rem;
     }
