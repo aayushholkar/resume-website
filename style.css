@@ -34,6 +34,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
   
   .nav-name {
@@ -47,6 +48,7 @@
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    flex-wrap: wrap;
   }
   
   .nav-links a {
@@ -122,3 +124,41 @@
     color: #ccc;
     margin-top: 4rem;
   }
+  
+  /* ✅ MOBILE RESPONSIVE FIXES */
+  @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+  
+    .section-heading, .card {
+      padding: 1.5rem;
+      margin: 1.5rem auto;
+      width: 90%;
+    }
+  
+    .nav-name {
+      font-size: 1rem;
+    }
+  
+    .card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .card p, ul li {
+      font-size: 0.95rem;
+    }
+  }
+  
